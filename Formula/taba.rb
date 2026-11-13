@@ -5,13 +5,13 @@
 class Taba < Formula
   desc "Worktree collections for working across repositories, with agents or your editor (formerly wtc)"
   homepage "https://taba.sh"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lcorneliussen/taba/releases/download/v0.2.3/taba_0.2.3_darwin_amd64.tar.gz"
-      sha256 "7c9c26ed7712143618a4b249f0d648fc0c77592610084fe2dbc40758af6bd680"
+      url "https://github.com/lcorneliussen/taba/releases/download/v0.2.4/taba_0.2.4_darwin_amd64.tar.gz"
+      sha256 "e0e51c9359a490df780bb0213f0218cda8e9ee28cc3fdeb3fe7eba7daf883c46"
 
       define_method(:install) do
         bin.install "taba"
@@ -19,8 +19,8 @@ class Taba < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lcorneliussen/taba/releases/download/v0.2.3/taba_0.2.3_darwin_arm64.tar.gz"
-      sha256 "c0d91d7d1c428c191e4d2d8870c6d8be1e849f565bb7f0e9fffc810c8c490797"
+      url "https://github.com/lcorneliussen/taba/releases/download/v0.2.4/taba_0.2.4_darwin_arm64.tar.gz"
+      sha256 "02f347c8237f602820f45caac3058006d18ac84e26f4828d3133fbd47ed891f5"
 
       define_method(:install) do
         bin.install "taba"
@@ -31,16 +31,16 @@ class Taba < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lcorneliussen/taba/releases/download/v0.2.3/taba_0.2.3_linux_amd64.tar.gz"
-      sha256 "eee18e5f62dc3f708d6640080050030510f67a6b1f3fc255ef462b3139157a8d"
+      url "https://github.com/lcorneliussen/taba/releases/download/v0.2.4/taba_0.2.4_linux_amd64.tar.gz"
+      sha256 "51c88bcdf872736f7176e5033966a23a85afa7d005c3cadb4a777dbe63c35a8b"
       define_method(:install) do
         bin.install "taba"
         bin.install "wtc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lcorneliussen/taba/releases/download/v0.2.3/taba_0.2.3_linux_arm64.tar.gz"
-      sha256 "9a5c55f445a0e82205764973134d4e211353352842f547b95ffec6514d8ec4cc"
+      url "https://github.com/lcorneliussen/taba/releases/download/v0.2.4/taba_0.2.4_linux_arm64.tar.gz"
+      sha256 "9f178aa448457814fe247f621dabf40ae1f4a9ccaa40fe2b75ef26f69d7805f4"
       define_method(:install) do
         bin.install "taba"
         bin.install "wtc"
